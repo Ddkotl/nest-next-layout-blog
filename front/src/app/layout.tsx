@@ -2,6 +2,7 @@ import { Header } from '@/components/layout/layoutAdmin/Header/Header'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.scss'
+import styles from './layout.module.scss'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
 		<html lang="ru">
 			<body className={inter.className}>
 				<Header />
-				<main>{children}</main>
+				<main className={styles.main}>{children}</main>
 			</body>
 		</html>
 	)

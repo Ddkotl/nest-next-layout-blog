@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export function Logo() {
-	return <div>Logo</div>
+	return <Image src="/logo.svg" priority alt="" width={40} height={40} />
 }
